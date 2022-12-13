@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:ital,wght@1,100&display=swap');
+
+body {
+    font-family: 'Merriweather';
+    padding:0;
+    margin:0;
+}
+
+.partea_superioara {
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+}
+
+header {
+    display: flex;
+    column-gap: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+.butoane {
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.logo {
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+.logare {
+    cursor: pointer;
+    margin-left: auto;
+    border-radius: 5px;
+    padding:10px 0;
+}
+
+a:hover {
+    background: #6F3096;
+    transition: .5s;
+}
+
+button{
+    cursor: pointer;
+    background: none;
+    border:none;
+    font-size: 25px;
+}
+
+.creare_cont {
+    cursor: pointer;
+    border-radius: 5px;
+    padding:10px 0;
+}
+
+
+.hamburger {
+    position:absolute;
+    margin-top: 25px;
+    right: 5%;
+    top:0;
+    width:35px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.slice {
+    width: 100%;
+    height: 7px;
+    margin: 2px 0;
+    background-color: black;
+    border-radius: 2px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .drop-down{
+    display: none;
+}
+
+.drop-down {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 752px){
+    .slice {
+        display: block;
+    }
+
+    .logare, .creare_cont {
+        display: none;
+    }
+    
+    .drop-down {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 752.02px){
+    
+    .drop-down {
+        display: none;
+    }
+}
+
+
+
+
+.partea_din_mijloc {
+    font-family: 'Merriweather';
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stanga {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    row-gap:10px;
+}
+
+.stanga h1 {
+    margin:0;
+    text-align:center;
+}
+.stanga p {
+    text-align:center;
+}
+
+
+.partea_din_mijloc button {
+    text-align: center;
+    font-family: 'Merriweather';
+    background-color: #6F3096;
+    width: 250px;
+    height:70px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+}
+
+.tipu_cu_sarea {
+    width: 100%;
+}
+
+
+
+.tipu_cu_sarea_poza{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 450px){
+    .partea_din_mijloc {
+        display: flex;
+        flex-direction: column;
+        }
+    .partea_superioara {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.partea_de_jos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width: 100%;
+    height: 90%;
+    background-color: #6F3096;
+}
+
+.email {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.5);
+    border-radius: 21px;
+    width: 80%;
+    height:70%;
+}
+
+.continut_mail {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h1{
+    margin: 15% 8% 5%;
+    color: #06114F;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 121.1%;
+}
+
+
+.left p{
+    margin: 5% 8% 5%;
+    color: #06114F;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 121.1%;
+}
+
+.right {
+    flex: 1;
+}
+
+.right form {
+    margin: 10%;
+    height: 100%;
+    width:auto;
+}
+
+.descriere {
+    width:100%;
+    color: #06114F;
+    height: 40.42px;
+    left: 743.54px;
+    top: 996.88px;
+    border-radius: 5px;
+}
+
+.drag_and_drop {
+    width:100%;
+    color: #06114F;
+    height: 140.42px;
+    left: 743.54px;
+    top: 996.88px;
+    border-radius: 5px;
+}
+
+.right label {
+    font-family: 'Merriweather';
+    color: #06114F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.submit {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    height: 11%;
+    color: white;
+    background: #6F3096;
+    border-radius: 5px;
+    width: 50%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h1 {
+    margin: 2%;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #252F65;
+}
+
+.carusel {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.img1 {
+    width:30%;
+    margin: 2%;
+}
+.img2 {
+    width:30%;
+    margin: 2%;
+}
+.img3 {
+    width:30%;
+    margin: 2%;
+}
+
+.bara_jos {
+    width:100%;
+}
+
+.la_munca {
+    position: relative;
+}
+
+.nu_la_intins_mana {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.insta {
+    position: absolute;
+    top:30%;
+    left:45%
+}
+.twitch {
+    position: absolute;
+    top:30%;
+    left:50%
+}
+.facebook {
+    position: absolute;
+    top:30%;
+    left:55%
+}
+.la_munca p {
+    font-size:1em;
+    position: absolute;
+    color:white;
+    top:50%;
+    left:40%;
+}
+
